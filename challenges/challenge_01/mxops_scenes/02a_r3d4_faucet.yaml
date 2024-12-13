@@ -1,0 +1,15 @@
+allowed_networks:  # the r3d4 faucet only works on testnet and devnet
+    - testnet
+    - devnet
+
+allowed_scenario:
+    - "mx-winter-coding-challenge"
+
+accounts:
+  # load all the accounts by their names (ex: bob, alice, ...)
+  - name: user_accounts
+    folder_path: ./../../wallets
+
+steps:
+  - type: R3D4Faucet
+    targets: "%user_accounts"

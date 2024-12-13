@@ -1,0 +1,32 @@
+allowed_networks:
+    - testnet
+    - devnet
+    - chain-simulator
+
+allowed_scenario:
+    - "mx-winter-coding-challenge"
+
+steps:
+  - type: GenerateWallets
+    save_folder: ./../../wallets
+    wallets:
+        - alice
+        - bob
+        - chalie
+    shard: 0
+
+  - type: GenerateWallets
+    save_folder: ./../../wallets
+    wallets:
+        - diana
+        - eve
+        - franck
+    shard: 1
+
+  - type: GenerateWallets
+    save_folder: ./../../wallets
+    wallets:
+        - grace
+        - hank
+        - jack
+    shard: 2

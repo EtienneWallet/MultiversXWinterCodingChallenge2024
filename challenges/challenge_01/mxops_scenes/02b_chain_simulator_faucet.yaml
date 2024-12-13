@@ -1,0 +1,15 @@
+allowed_networks:
+    - chain-simulator
+
+allowed_scenario:
+    - "mx-winter-coding-challenge"
+
+accounts:
+  # load all the accounts by their names (ex: bob, alice, ...)
+  - name: user_accounts
+    folder_path: ./../../wallets
+
+steps:
+  - type: ChainSimulatorFaucet
+    amount: 100000000000000000000  # 100 EGLD
+    targets: "%user_accounts"
