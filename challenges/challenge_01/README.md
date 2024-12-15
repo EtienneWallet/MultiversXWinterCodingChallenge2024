@@ -17,6 +17,15 @@ This challenge will use the develop [MxOps](https://github.com/Catenscia/MxOps) 
 pipx install git+https://github.com/Catenscia/MxOps@develop --force
 ```
 
+For this challenge 01, the following features have been specifically added MxOps:
+
+- Wallets generation: [MxOps PR#83](https://github.com/Catenscia/MxOps/pull/83)
+- Account folder loading: [MxOps PR#84](https://github.com/Catenscia/MxOps/pull/84)
+- r3d4 faucet: [MxOps PR#85](https://github.com/Catenscia/MxOps/pull/85)
+- chain simulator faucet: [MxOps PR#86](https://github.com/Catenscia/MxOps/pull/86)
+- Lists as Scenario variables for loops and faucets: [MxOps PR#88](https://github.com/Catenscia/MxOps/pull/88)
+
+
 ### Steps
 
 #### Accounts Creation
