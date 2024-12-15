@@ -11,7 +11,7 @@ I build MxOps on top of the py-skd from the core team of MultiversX, so I would 
 
 ## Structure
 
-This repository is organised as if every challenge is independant: each challenge have its own dedicated folder in the [challenges folder](./challenges).
+This repository is organised to show every challenges as they are submitted: each challenge have its own dedicated folder in the [challenges folder](./challenges). So even if a challenge is aimed to be an improvment over a previous challenge, it will still have a new dedicated folder.
 
 Each challenge will be described extensively with a `README.md` and will have the necessary scripts to be executed on the devnet and on the chain-simulator.
 The chain simulator will be used to check that everything is correct before executing each challenge on the devnet.
