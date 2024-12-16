@@ -17,7 +17,7 @@ This challenge will use the develop [MxOps](https://github.com/Catenscia/MxOps) 
 pipx install git+https://github.com/Catenscia/MxOps@develop --force
 ```
 
-For this challenge 01, the following features have been specifically added MxOps:
+For this challenge #01, the following features have been specifically added to MxOps:
 
 - Wallets generation: [MxOps PR#83](https://github.com/Catenscia/MxOps/pull/83)
 - Account folder loading: [MxOps PR#84](https://github.com/Catenscia/MxOps/pull/84)
