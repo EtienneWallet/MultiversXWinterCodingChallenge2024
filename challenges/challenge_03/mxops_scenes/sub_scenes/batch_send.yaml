@@ -1,0 +1,33 @@
+allowed_networks:
+    - testnet
+    - devnet
+    - chain-simulator
+
+allowed_scenario:
+    - "mx-winter-coding-challenge"
+
+steps:
+
+  - type: Python
+    module_path: ./scripts/functions.py
+    function: generate_random_addresses
+    arguments:
+      - "%batch_size"
+    print_result: false
+    result_save_key: random_receivers
+
+  
+  - type: Loop
+    var_name: receiver
+    var_list: "%random_receivers"
+    steps:
+      - type: Loop
+        var_name: user
+        var_list: "%user_accounts"
+        steps:
+          - type: FungibleTransfer
+            sender: "%user"
+            receiver: "%receiver"
+            token_identifier: "%{%{user}WinterToken.identifier}"
+            amount: 10_000_00000000
+            checks: []

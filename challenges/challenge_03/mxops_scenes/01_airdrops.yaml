@@ -1,0 +1,30 @@
+allowed_networks:
+    - testnet
+    - devnet
+    - chain-simulator
+
+allowed_scenario:
+    - "mx-winter-coding-challenge"
+
+accounts:
+  - name: user_accounts
+    folder_path: ./../../wallets
+
+steps:
+
+  - type: SetVars
+    variables:
+      batch_size: 50
+  
+  - type: Loop
+    var_name: LoopVar
+    var_start: 0
+    var_end: 20
+    steps:
+      - type: Scene
+        scene_path: ./mxops_scenes/sub_scenes/batch_send.yaml
+      - type: Wait
+        for_blocks: 1
+
+  - type: Wait
+    for_blocks: 3
